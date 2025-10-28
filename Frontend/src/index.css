@@ -1,0 +1,76 @@
+/* --- Style global du site --- */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f9fbfd;
+    color: #333;
+    font-family: "Poppins", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* --- Gestion des titres et paragraphes --- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    color: #1a2b49;
+}
+
+p {
+    color: #444;
+    margin-bottom: 0.75rem;
+}
+
+/* --- Lien global --- */
+a {
+    color: #0083b0;
+    text-decoration: none;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+a:hover {
+    color: #005f8f;
+    transform: scale(1.02);
+}
+
+/* --- Code & blocs de texte --- */
+code {
+    font-family: "Source Code Pro", Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+    background-color: #eef4fb;
+    color: #0d47a1;
+    padding: 0.15rem 0.35rem;
+    border-radius: 4px;
+    font-size: 0.95em;
+}
+
+/* --- Scrollbar légère et moderne --- */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f0f4f8;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #00b4db 0%, #0083b0 100%);
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #0083b0 0%, #005f8f 100%);
+}
+
+/* --- Sélecteur de texte stylisé --- */
+::selection {
+    background: #00b4db;
+    color: #fff;
+}

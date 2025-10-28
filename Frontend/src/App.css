@@ -1,0 +1,63 @@
+.App {
+    text-align: center;
+    font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+    background-color: #f9fbfd;
+    color: #333;
+    min-height: 100vh;
+}
+
+/* Logo animé, modernisé */
+.App-logo {
+    height: 35vmin;
+    pointer-events: none;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
+    transition: transform 0.3s ease-in-out;
+}
+
+.App-logo:hover {
+    transform: scale(1.05);
+}
+
+/* Animation du logo si mouvement autorisé */
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+/* En-tête modernisée avec dégradé et centrage harmonieux */
+.App-header {
+    background: linear-gradient(135deg, #00b4db 0%, #0083b0 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: #ffffff;
+    box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Liens avec effet dynamique */
+.App-link {
+    color: #00c6ff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.App-link:hover {
+    color: #0072ff;
+    transform: scale(1.05);
+    text-decoration: underline;
+}
+
+/* Animation fluide du logo */
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
